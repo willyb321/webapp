@@ -2,23 +2,22 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebApp</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-    
- <!-- bower:css -->
- <!-- endbower -->
-   <!-- bower:js -->
-   <script src="/bower_components/jquery/dist/jquery.js"></script>
-   <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-   <script src="/bower_components/moment/moment.js"></script>
-   <!-- endbower -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/moment/moment.js"></script>
+    <!-- endbower -->
     <!-- endbuild -->
-    
 </head>
 
 <body>
@@ -26,10 +25,13 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container-fluid">
-        <center><script>
-    var test = moment();
-    document.write("The current date is: ");
-    document.write(test);</script></center>
+        <center>
+            <script>
+            var test = moment();
+            document.write("The current date is: ");
+            document.write(test);
+            </script>
+        </center>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -49,7 +51,7 @@
     ga('send', 'pageview');
     </script>
     <!-- build:js scripts/vendor.js -->
-    
+    <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
