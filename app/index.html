@@ -18,6 +18,10 @@
     <!-- build:css styles/stylesheet.css -->
     <link rel="stylesheet" href="./styles/stylesheet.css">
     <!-- endbuild -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/moment/moment.js"></script>
+    <!-- endbower -->
 
 </head>
 
@@ -86,7 +90,10 @@
             <footer class="w3-container w3-teal w3-bottom" style="bottom: 0px; width: 100%; height: 100px position: fixed">
                 </style>
                 <h5>&copy All Time - <a href="http://tehsuperwilly.xyz/willy3f1a">William Blythe (Willyb321)</a></h5>
-                <p>"I do some stuff and things..." - Willyb321</p>
+                <p>"I do some stuff and things..." - willyb321. The current time is: <script>
+                    var time = moment();
+                    document.write(time)
+                </script></p>
             </footer>
         </div>
     </div>
@@ -110,9 +117,7 @@
       ga('create','UA-55840909-12');ga('send','pageview');
     </script>
     <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
+    
     <!-- endbuild -->
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap/js/affix.js"></script>
