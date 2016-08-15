@@ -1,4 +1,4 @@
-// generated on 2016-08-10 using generator-webapp 2.1.0
+// generated on 2016-08-15 using generator-webapp 2.1.0
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
@@ -147,6 +147,7 @@ gulp.task('serve:test', ['scripts'], () => {
 gulp.task('wiredep', () => {
   gulp.src('app/*.html')
     .pipe(wiredep({
+      exclude: ['bootstrap.js'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
