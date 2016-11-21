@@ -3,4 +3,3 @@ gulp
 git add .
 fuckit
 git push
-firebase deploy 
